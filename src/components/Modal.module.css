@@ -1,0 +1,39 @@
+/*
+ * Стили компонента Modal
+ */
+
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1200;
+}
+
+.Modal {
+  max-width: calc(100vw - 48px);
+  max-height: calc(100vh - 24px);
+}
+.ButtonCloseModal {
+  position: absolute;
+  background-color: transparent;
+  top: 0px;
+  right: 0px;
+  color: #3f51b5;
+  opacity: 0.8;
+  background: none;
+  border: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.ButtonCloseModal:hover {
+  opacity: 1;
+}
+.ButtonCloseModal > svg {
+  width: 50px;
+  height: 50px;
+}
