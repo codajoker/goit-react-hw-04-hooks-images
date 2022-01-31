@@ -2,7 +2,7 @@ import styles from './Modal.module.css';
 import { AiFillCloseCircle } from 'react-icons/ai';
 import PropTypes from 'prop-types';
 
-import React, { Component, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { createPortal } from 'react-dom';
 const modalRoot = document.querySelector('#modal-root');
 
