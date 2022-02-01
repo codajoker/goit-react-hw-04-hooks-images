@@ -23,7 +23,6 @@ function App() {
     });
   };
   const handleLoadMore = e => {
-    e.preventDefault();
     setPage(prevState => {
       return prevState + 1;
     });
